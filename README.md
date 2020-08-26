@@ -1,7 +1,7 @@
 # がぞったー
-[English]()
-文字の画像を生成するジェネレーターです。
-背景の色や文字色、フォントなどを変えることができます。
+[English](https://github.com/saladbowl77/Gazotter/blob/master/README-EN.md)  
+文字の画像を生成するジェネレーターです。  
+背景の色や文字色、フォントなどを変えることができます。  
 
 ## 使用言語 プラグイン
 HTML CSS  

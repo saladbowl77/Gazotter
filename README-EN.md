@@ -1,7 +1,7 @@
 # Gazotter
-[日本語](https://github.com/saladbowl77/Gazotter)
-This is made image.
-It can change color, font and so on.
+[日本語](https://github.com/saladbowl77/Gazotter)  
+This is made image.  
+It can change color, font and so on.  
 
 ## used language, library
 HTML CSS  
