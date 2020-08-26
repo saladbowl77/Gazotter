@@ -5,10 +5,10 @@
 ## 使用言語 プラグイン
 HTML CSS
 JavaScript
-(html2canvas)[https://html2canvas.hertzen.com]
+[html2canvas](https://html2canvas.hertzen.com)
 
 ## ライセンス
-がぞったーは(MIT License)[http://www.opensource.org/licenses/MIT]です。
+がぞったーは[MIT License](http://www.opensource.org/licenses/MIT)です。
 
 ## 作成者
 これはさらだぼぉるとごあいによる共同製作です。
