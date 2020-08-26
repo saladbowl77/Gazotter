@@ -1,0 +1,29 @@
+#img_output #capture #text_show.top {
+  position: absolute; top: 15px;
+}
+#img_output #capture #text_show.mid {
+  position: absolute; top: 50%;
+  -webkit-transform : translateY(-50%);
+  transform : translateY(-50%);
+}
+#img_output #capture #text_show.bottom {
+  position: absolute; bottom: 15px;
+}
+#img_output #capture #text_show.left {
+  width: calc(100% - 15px); max-width: 600px;
+  text-align: left;
+}
+#img_output #capture #text_show.center {
+  width: calc(100% - 15px); max-width: 600px;
+  text-align: center;
+}
+#img_output #capture #text_show.right {
+  width: calc(100% - 15px); max-width: 600px;
+  text-align: right;
+}
+#img_output #capture #text_show.mid.center {
+  position: absolute; top: 50%;
+  -webkit-transform : translateY(-50%);
+  transform : translateY(-50%);
+  text-align: center;
+}

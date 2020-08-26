@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" />
+    <link href="ichi.css" rel="stylesheet" type="text/css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163146016-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-163146016-4');
+    </script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <textarea id="text_input" onChange="panel_settings()"></textarea>
+      <div class="hidden_box">
+        <label for="on_off_ch">詳細設定</label>
+        <input type="checkbox" id="on_off_ch">
+        <div class="hidden_show">
+          <p class="color_settings">
+            縁取り色:
+            <input type="color" id="bg_color_1" value="#91D6E3" onChange="panel_settings()">
+          </p>
+          <p class="color_settings">
+            背景色:
+            <input type="color" id="bg_color_2" value="#EFFCFF" onChange="panel_settings()">
+          </p>
+          <p class="color_settings">
+            文字色:
+            <input type="color" id="font_color" value="#000000" onChange="panel_settings()">
+          </p>
+          <div>
+            <p class="txt_settings">
+            フォント:
+            <select id="font_type" onChange="panel_settings()">
+              <option value="Yu Mincho, YuMincho">明朝体</option>
+              <option value="Mamelon">Mamelon</option>
+              <option value="Ronde-B_square" class="Ronde-B_square">Ronde-B</option>
+              <option value="JKG-L">JKゴシックフォント</option>
+              <option value="GenShinGothic-P">源真ゴシックP</option>
+            </select>
+          </p>
+          <p class="txt_settings">
+            文字サイズ:
+            <input type="number" min="1" max="100" value="12" step="1" id="fontSize" onChange="panel_settings()"  inputmode="numeric">
+          </p>
+          </div>
+          <div>
+            <form id="XlineS">
+              <label for="left">
+                <img src="./icon/left-right.png" alt="" class="deg180">
+              </label>
+              <label for="center">
+                <img src="./icon/center.png" alt="">
+              </label>
+              <label for="right">
+                <img src="./icon/left-right.png" alt="">
+              </label>
+              <input type="radio" name="xline" value="left" checked onChange="panel_settings()" id="left">
+              <input type="radio" name="xline" value="center" onChange="panel_settings()" id="center">
+              <input type="radio" name="xline" value="right" onChange="panel_settings()" id="right">
+            </form>
+          <form id="YlineS">
+            <label for="top">
+              <img src="./icon/top-bottom.png" alt="">
+            </label>
+            <label for="mid">
+              <img src="./icon/mid.png" alt="">
+            </label>
+            <label for="bottom">
+              <img src="./icon/top-bottom.png" alt="" class="deg180">
+            </label>
+            <input type="radio" name="yline" value="top" checked onChange="panel_settings()" id="top">
+            <input type="radio" name="yline" value="mid" onChange="panel_settings()" id="mid">
+            <input type="radio" name="yline" value="bottom" onChange="panel_settings()" id="bottom">
+          </form>
+          </div>
+          <label for="on_off_ch">閉じる</label>
+        </div>
+      </div>
+      <div id="img_output">
+        <div id="nones">
+          <p class="Mamelon">Mamelon</p>
+          <p class="Mamelon-rl">Mamelon</p>
+          <p class="Ronde-B_square">Ronde-B_square</p>
+          <p class="Ronde-B_square-rl">Ronde-B_square</p>
+          <p class="JKG-L">JKG-L</p>
+          <p class="JKG-L-rl">JKG-L</p>
+          <p class="GenShinGothic-P">GenShinGothic-P</p>
+          <p class="GenShinGothic-P-rl">GenShinGothic-P</p>
+        </div>
+        <div id="capture">
+          <div id="test_wrap">
+            <p id="text_show" class="top left lp-vertical  lp-width-700 lp-height-450 lp-font-size-20">ここに文章が入ります</p>
+          </div>
+          <p id="sukasi_txt">#がぞったー/https://gazotter.space</p>
+        </div>
+        <img src="" alt="" id="canvas_image">
+      </div>
+    </main>
+    <div id="canvas_draw"></div>
+    <script src = "html2canvas.js"></script>
+    <script src="script.js"></script>
+    <script src="sidebar.js"></script>
+  </body>
+</html>

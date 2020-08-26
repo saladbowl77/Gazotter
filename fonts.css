@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Mamelon";
+  src: url("/fonts/Mamelon.woff2") format("woff2"),
+       url("/fonts/Mamelon.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Mamelon-rl";
+  src: url("/fonts/Mamelon-rl.woff2") format("woff2"),
+       url("/fonts/Mamelon-rl.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Ronde-B_square";
+  src: url("/fonts/Ronde-B_square.woff2") format("woff2"),
+       url("/fonts/Ronde-B_square.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Ronde-B_square-rl";
+  src: url("/fonts/Ronde-B_square-rl.woff2") format("woff2"),
+       url("/fonts/Ronde-B_square-rl.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "JKG-L";
+  src: url("/fonts/JKG-L.woff2") format("woff2"),
+       url("/fonts/JKG-L.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "JKG-L-rl";
+  src: url("/fonts/JKG-L-rl.woff2") format("woff2"),
+       url("/fonts/JKG-L-rl.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GenShinGothic-P";
+  src: url("/fonts/GenShinGothic-P-Normal.woff2") format("woff2"),
+       url("/fonts/GenShinGothic-P-Normal.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GenShinGothic-P-rl";
+  src: url("/fonts/GenShinGothic-P-Normal-rl.woff2") format("woff2"),
+       url("/fonts/GenShinGothic-P-Normal-rl.woff") format("woff");
+  font-weight: normal;
+}
+
+.Mamelon {font-family: 'Mamelon';}
+.Mamelon-rl {font-family: 'Mamelon-rl';}
+.Ronde-B_square {font-family: 'Ronde-B_square';}
+.Ronde-B_square-rl {font-family: 'Ronde-B_square-rl';}
+.JKG-L {font-family: 'JKG-L';}
+.JKG-L-rl {font-family: 'JKG-L-rl';}
+.GenShinGothic-P {font-family: 'GenShinGothic-P';}
+.GenShinGothic-P-rl {font-family: 'GenShinGothic-P-rl';}

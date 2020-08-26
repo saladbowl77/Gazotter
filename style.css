@@ -1,0 +1,143 @@
+* {margin: 0;padding: 0;}
+h1, h2, h3, p, a, ul, li, label {font-family: "Helvetica Neue",Helvetica,Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '游ゴシック', "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ", Meiryo,"MS ゴシック","MS Gothic",sans-serif;}
+
+main {padding-top: 43px;}
+#text_input {
+  width: calc(90vw - 2px); height: 100px;
+  display: block;
+  margin: 0 auto; padding: 10px;
+  border: 0; border-radius: 10px 10px 0px 0px;
+  border-style: solid; border-width: 1px 1px 0px 1px;
+  border-color:#acacac;
+}
+.hidden_box {
+  display: block; margin: 0 auto; text-align: center;
+  width: calc(90vw - 2px); padding: 1px 10px; background: #acacac;
+  border-radius: 0px 0px 10px 10px;
+}
+.hidden_box label {
+  width: 100%; height: 100%;
+}
+.hidden_box #on_off_ch {
+  display: none;
+}
+.hidden_box .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+.hidden_box input:checked ~ .hidden_show {
+  padding: 10px 0;
+  height: auto;
+  opacity: 1;
+}
+.color_settings {display: inline-block;}
+.txt_settings {display: inline-block;}
+#img_output {
+  margin-top: 10px;
+  position: relative;
+  width: 100vw; height: 100vw;
+  max-width: 600px; max-height: 600px;
+}
+#img_output #capture{
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  max-width: 600px; max-height: 600px;
+  z-index: 1;
+  overflow: hidden;
+}
+#img_output #capture #test_wrap {
+  margin: 0;
+  position: relative; top: 10px; left: 10px;
+  padding: 5px; border-radius: 15px;
+  width: calc(100% - 30px); height: calc(100% - 30px);
+}
+#img_output #capture #text_show {
+  max-width: calc(100% -15px)!important; max-height: calc(100% -15px)!important; font-size: 12pt;
+  word-wrap: break-word;
+}
+.deg180 {transform:rotate(180deg);}
+label img {width: 30px; height: 30px;}
+form {display: inline-block;}
+form input[type="radio"] {display: none;}
+.rl {
+  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode:vertical-rl;
+  text-orientation: upright;
+  -webkit-text-orientation: upright;
+}
+#img_output #capture #sukasi_txt {
+  position: absolute; bottom: 0; right: 10px;
+  font-size: 6px; color: #fff;
+}
+#img_output #capture #bg_image {
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  max-width: 600px; max-height: 600px;
+}
+#canvas_image {
+  position: absolute; top: 0; left: 0;
+  width: 100vw; height: 100vw;
+  max-width: 600px; max-height: 600px;
+  z-index: 2;
+  padding: 0; margin: 0;
+}
+#nones {display: none;}
+#canvas_draw {display: none;}
+header {width: 100%; height: 36px; background-color: lightskyblue; position: fixed; top: 0; left: 0; z-index: 100;}
+#open_bt, h1 {display: inline-block;}
+header h1 {margin: 0; position: absolute; top: 50%; left: 60px; transform: translateY(-50%);}
+#open_bt {
+  height: 36px; width: 36px;
+}
+#open {
+  position: fixed;
+  height: 36px; width: 36px;
+  display: inline-block;
+}
+#open span {
+  position: absolute; left: 10px;
+  height: 4px; width: 30px;
+  background-color: #444;
+  border-radius: 2px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#open span:nth-of-type(1) {top: 4px;}
+#open span:nth-of-type(2) {top: 16px;}
+#open span:nth-of-type(3) {top: 28px;}
+.d-show {display: block; animation: sideMove .5s 0s forwards;}
+.d-none {animation: sideMoveEnd .5s 0s forwards;}
+.d-b-show {display: block;}
+.d-b-none {animation: sideMoveEndBg .5s 0s forwards;}
+.dp-none {display: none;}
+#side li {list-style: none; }
+#link,
+#s_bg {position: fixed; top: 0; left: 0;}
+#link {width: calc(80% - 20px); height: 100%; z-index: 102;
+background-color: #fff; padding: 20px; position: fixed;
+}
+#swipe {width: calc(80% - 20px); height: 100%; z-index: 101; padding: 20px;}
+#link a {text-decoration: none; color: #878787; z-index: 103;}
+#link #app a {font-size: 22px;}
+#link #about {position: absolute; bottom: 50px;}
+#link #about a {font-size: 18px;}
+#s_bg {width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.45); z-index: 99;}
+textarea {width: calc(100% - 10px); margin: 5px; height: 20vh; padding: 5px; font-size: 15px;}
+select, button {border: 0; width:  calc(50% - 13px); margin: 5px; height: 30px; border-radius: 10px; background-color: #efefef;}
+input[type="number"] {border: 0; padding: 0 10px; width:  calc(40% - 33px); margin: 5px; height: 30px; border-radius: 10px; background-color: #efefef;}
+@keyframes sideMove {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+@keyframes sideMoveEnd {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-100%);}
+}
+@keyframes sideMoveEndBg {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
