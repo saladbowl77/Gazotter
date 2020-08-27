@@ -15,12 +15,13 @@ function panel_settings() {
   const font = d.getElementById("font_color").value;
   const fontType = d.getElementById('font_type').value;
   const fontsize = d.getElementById("fontSize").value;
-  const text = text_input.value.replace(/\n/g, '<br>');
+  let text = text_input.value.replace(/\n/g, "</span><span>");
+  text = `<span>${text}</span>`
   text_show.innerHTML = text;
   capture.style.backgroundColor = bg_1;
   test_wrap.style.backgroundColor = bg_2;
   text_show.style.color = font;
-  text_show.style.fontFamily = `"${fontType}"`;
+  text_show.style.fontFamily = `${fontType}`;
   text_show.style.fontSize = fontsize + "pt";
   const xlines = d.getElementById( "XlineS" );
   const xlineValue = xlines.xline.value;

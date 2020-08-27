@@ -58,17 +58,13 @@ main {padding-top: 43px;}
   max-width: calc(100% -15px)!important; max-height: calc(100% -15px)!important; font-size: 12pt;
   word-wrap: break-word;
 }
+#img_output #capture #text_show span {
+  display: block;
+}
 .deg180 {transform:rotate(180deg);}
 label img {width: 30px; height: 30px;}
 form {display: inline-block;}
 form input[type="radio"] {display: none;}
-.rl {
-  writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  -webkit-writing-mode:vertical-rl;
-  text-orientation: upright;
-  -webkit-text-orientation: upright;
-}
 #img_output #capture #sukasi_txt {
   position: absolute; bottom: 0; right: 10px;
   font-size: 6px; color: #fff;
