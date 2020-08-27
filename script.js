@@ -20,6 +20,7 @@ function panel_settings() {
   capture.style.backgroundColor = bg_1;
   test_wrap.style.backgroundColor = bg_2;
   text_show.style.color = font;
+  text_show.style.fontFamily = `"${fontType}"`;
   text_show.style.fontSize = fontsize + "pt";
   const xlines = d.getElementById( "XlineS" );
   const xlineValue = xlines.xline.value;
