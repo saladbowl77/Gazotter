@@ -2,6 +2,9 @@
 h1, h2, h3, p, a, ul, li, label {font-family: "Helvetica Neue",Helvetica,Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '游ゴシック', "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ", Meiryo,"MS ゴシック","MS Gothic",sans-serif;}
 
 main {padding-top: 43px;}
+main#noTop {width: calc(100% - 20px); margin: 0 10px;}
+a {display: block;}
+p a {display: inline-block;}
 #text_input {
   width: calc(90vw - 2px); height: 100px;
   display: block;
@@ -10,28 +13,46 @@ main {padding-top: 43px;}
   border-style: solid; border-width: 1px 1px 0px 1px;
   border-color:#acacac;
 }
-.hidden_box {
+#settings_button {
   display: block; margin: 0 auto; text-align: center;
   width: calc(90vw - 2px); padding: 1px 10px; background: #acacac;
   border-radius: 0px 0px 10px 10px;
 }
-.hidden_box label {
+#setting_wrap.hidden {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 0%;
+}
+#setting_wrap {
+  position: fixed;
+  top: 0; left: 0;
   width: 100%; height: 100%;
+  z-index: 200;
 }
-.hidden_box #on_off_ch {
-  display: none;
-}
-.hidden_box .hidden_show {
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: 0.8s;
-}
-.hidden_box input:checked ~ .hidden_show {
+#setting_wrap #settings {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
   padding: 10px 0;
-  height: auto;
+  width: auto; height: auto;
   opacity: 1;
+  text-align: center;
+  z-index: 210;
+  color: #efefef;
+}
+#setting_wrap.hidden #settings {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 0;
+  width: 0; height: auto;
+  opacity: 0;
+  z-index: 0;
+  text-align: center;
+}
+#bg_close {
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .color_settings {display: inline-block;}
 .txt_settings {display: inline-block;}

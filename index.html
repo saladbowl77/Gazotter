@@ -37,10 +37,9 @@
     <header></header>
     <main>
       <textarea id="text_input" onChange="panel_settings()"></textarea>
-      <div class="hidden_box">
-        <label for="on_off_ch">詳細設定</label>
-        <input type="checkbox" id="on_off_ch">
-        <div class="hidden_show">
+      <p id="settings_button">詳細設定</p>
+      <div id="setting_wrap" class="hidden">
+        <div id="settings">
           <p class="color_settings">
             縁取り色:
             <input type="color" id="bg_color_1" value="#91D6E3" onChange="panel_settings()">
@@ -99,8 +98,9 @@
             <input type="radio" name="yline" value="bottom" onChange="panel_settings()" id="bottom">
           </form>
           </div>
-          <label for="on_off_ch">閉じる</label>
+          <p id="setting_menu_close_button">閉じる</p>
         </div>
+        <div id="bg_close"></div>
       </div>
       <div id="img_output">
         <div id="nones">

@@ -7,6 +7,11 @@ const output = d.getElementById("canvas_image");
 const capture = d.getElementById("capture");
 const sukasi_txt = d.getElementById("sukasi_txt");
 const canvas_draw = d.getElementById("canvas_draw");
+const setting_menu_button = d.getElementById("settings_button");
+const setting_menu_close_button = d.getElementById("setting_menu_close_button");
+const setting_menu_bg_close_button = d.getElementById("bg_close");
+var setting_wrap = d.getElementById("setting_wrap");
+
 window.onload = panel_settings();
 function panel_settings() {
   window.scrollTo(0,0);
@@ -35,3 +40,13 @@ function panel_settings() {
     output.setAttribute("src",canvas.toDataURL());
   });
 }
+
+setting_menu_button.addEventListener('click', function(){
+  setting_wrap.classList.toggle("hidden");
+}, false);
+setting_menu_close_button.addEventListener('click', function(){
+  setting_wrap.classList.toggle("hidden");
+}, false);
+setting_menu_bg_close_button.addEventListener('click', function(){
+  setting_wrap.classList.toggle("hidden");
+}, false);
